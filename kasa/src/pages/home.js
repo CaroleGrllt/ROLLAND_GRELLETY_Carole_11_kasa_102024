@@ -7,10 +7,11 @@ import Card          from '../components/card'
 
 import cover         from '../assets/img/home_banner.png'
 
+
 export default function Home () {
     return (
         <>
-            <header className="header">
+            <header>
                 <Header />
             </header>
             <main>
@@ -30,7 +31,7 @@ export default function Home () {
                         name={accomodation.title}
                     />
                 })}
-            </section>
+                </section>
             </main>
             <footer>
                 <Footer />

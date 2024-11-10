@@ -1,0 +1,29 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+main {
+    .about_banner {
+        padding: 0 20px;
+
+        @include mixins.lg {
+            padding: 0 100px;
+        }
+
+        .cover_container {
+            img {
+                filter: brightness(70%);
+            }
+        }
+    }
+
+    .about_collapses {
+        padding: 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+
+        @include mixins.lg {
+            padding: 8px 210px 38px;
+            align-items: center;
+        } 
+    }
+}

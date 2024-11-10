@@ -1,0 +1,85 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+.collapse_container {
+    .collapse_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $red;
+        border-radius: 5px;
+        margin-top: 20px;
+    
+        @include mixins.lg {
+            width: 100%;
+            margin-top: 30px;
+        }
+    
+        span {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 700;
+            color: $white;
+            padding: 10px;
+    
+            @include mixins.lg {
+                font-size: 24px;
+                padding: 10px 15px;
+            }
+        }
+    
+        .opened-collapse-arrow {
+            .fa-angle-up {
+                color: $white;
+                font-size: 16px;
+                padding: 10px;
+
+                @include mixins.lg {
+                    padding: 10px 20px;
+                    font-size: 24px;
+                }
+    
+                &.clicked {
+                    transform: rotate(-180deg);
+                    transition: transform .7s ease-in; 
+                }
+    
+                &.unclicked {
+                    transition: transform .7s ease-in; 
+                }
+            }
+        }
+    } 
+    
+    .dropdown {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 600ms ease-out;
+        width: 100%;
+
+        &.dropdown-open { 
+            max-height: 350px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+            transition: max-height 600ms ease-in;
+        }
+
+        p {
+            margin: 0;
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            padding: 13px 22px 20px;
+            background-color: $lightgrey;
+            line-height: 1.5;
+
+            @include mixins.lg {
+                font-size: 18px;
+            }
+        }
+    
+
+    }
+}

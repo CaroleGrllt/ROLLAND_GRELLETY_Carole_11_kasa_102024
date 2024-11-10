@@ -13,7 +13,9 @@
 
 // PAGES
 @use './pages/home';
+@use './pages/about';
 
 // COMPONENTS
 @use './components/banner';
 @use './components/card';
+@use './components/collapse';

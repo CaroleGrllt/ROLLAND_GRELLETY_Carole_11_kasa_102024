@@ -1,7 +1,7 @@
 @use '../utils/mixins';
 @import '../utils/variables';
 
-.header {
+header {
     .container {
        display: flex;
        justify-content: space-between;
