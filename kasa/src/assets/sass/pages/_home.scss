@@ -1,0 +1,41 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+
+main {
+    .home_banner {
+        padding: 0 20px;
+
+        @include mixins.lg {
+            padding: 0 100px;
+        }
+
+        .cover_container {
+            
+            @include mixins.lg {
+                filter: drop-shadow(0 4px 4px  rgba(0,0,0, 0.3));
+            }
+
+            img {
+                filter: brightness(40%);
+                border: 1px solid $black;
+            }
+        }
+    }
+
+    .cards_container {
+        margin: 22px 20px 27px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        @include mixins.lg {
+            margin: 43px 100px 50px;
+            background-color: $lightgrey;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 56px 50px 43px;
+            gap: 60px 50px;
+            border-radius: 25px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+.header {
+    .container {
+       display: flex;
+       justify-content: space-between;
+       margin: 20px 20px 27px;
+
+       @include mixins.lg {
+            margin: 45px 100px 50px;
+        }
+
+       .header__container__img{
+           width: 145px;
+
+           @include mixins.lg {
+                width: 210px;
+            }
+
+           img {
+               width: 100%;
+           }
+        }
+
+       nav {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    @include mixins.lg {
+                        font-size: 24px;
+                        text-transform: none;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            li:first-child {
+                margin-right: 26px;
+
+                @include mixins.lg {
+                    margin-right: 57px;
+                }
+            }
+        }
+       }
+    }
+}

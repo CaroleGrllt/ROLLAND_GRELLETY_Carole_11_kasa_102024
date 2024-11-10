@@ -1,2 +1,19 @@
+// BASE
 @use './base/fonts';
 @use './base/normalize';
+
+// LAYOUT
+@use './layout/body';
+@use './layout/header';
+@use './layout/footer';
+
+// UTILS
+@use './utils/mixins';
+@use './utils/variables';
+
+// PAGES
+@use './pages/home';
+
+// COMPONENTS
+@use './components/banner';
+@use './components/card';

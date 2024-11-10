@@ -1,0 +1,57 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+.cover_container {   
+    position: relative; 
+
+    .cover_image {
+        width: 100%;
+        height: 111px;
+
+        @include mixins.lg {
+            height: 223px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+            @include mixins.lg {
+                border-radius: 25px;
+            }
+        }
+    }
+    .cover_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        height: 100%;
+        width: 230px;
+        left: 0;
+        top: 0;
+        margin-left: 16px;
+
+        @include mixins.lg {
+            width: 100%;
+            align-items: center;
+            margin: 0;
+        }
+
+
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: $white;
+            line-height: 30px;
+
+            @include mixins.lg {
+                font-size: 48px;
+                font-weight: 700;
+                text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+            }
+        }
+    }
+}

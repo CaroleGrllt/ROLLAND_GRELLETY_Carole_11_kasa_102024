@@ -1,0 +1,43 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+
+footer {
+    background-color: $black;
+    padding: 60px 0;
+
+    @include mixins.lg {
+        padding: 66px 0 30px;
+    }
+
+    
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        svg {
+            width: 122px;
+
+            path {
+                fill: $white;
+            }
+        }
+
+        span {
+            color: $white;
+            width: 35%;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+
+            @include mixins.lg {
+                font-size: 24px;
+                font-weight: 500;
+                margin-top: 35px;
+
+            }
+        }
+    }
+}
