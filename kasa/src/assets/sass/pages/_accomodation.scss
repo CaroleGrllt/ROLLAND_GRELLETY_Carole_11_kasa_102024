@@ -1,0 +1,133 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+main {
+    .container {
+        margin: 27px 20px;
+
+        @include mixins.lg {
+            margin: 50px 100px;
+        }
+
+
+        .carrousel {
+            height: 255px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+
+            @include mixins.lg {
+                height: 415px;
+            }
+        }
+
+        .content {
+            .top {
+                @include mixins.lg {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                }
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    @include mixins.lg {
+                        margin-bottom: 0;
+                    }
+
+                    h1 {
+                        font-size: 18px;
+                        color: $red;
+                        font-weight: 500;
+
+                        @include mixins.lg {
+                            font-size: 36px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .location {
+                        color: $black;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: 500;
+
+                        @include mixins.lg {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    .tag-types {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                    }
+                }
+                
+                .right {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+
+                    @include mixins.lg {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+
+                    .identity {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        span {
+                            color: $red;
+                            text-align: end;
+                            font-size: 16px;
+                            margin-right: 10px;
+                            width: 50%;
+                            line-height: 1.4;
+                            font-weight: 500;
+
+                            @include mixins.lg {
+                                font-size: 18px;
+                            }
+                        }
+
+                        img {
+                            width: 55px; 
+                            height: 55px;
+                            border-radius: 100%;
+                            object-fit: cover;
+
+                            @include mixins.lg {
+                                width: 65px; 
+                                height: 65px;
+                            }
+                        }
+                    }
+
+                    .ratings {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .bottom {
+                @include mixins.lg {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 70px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import Apropos from '../about.json'
+import Apropos       from '../about.json'
 
 import Header        from '../components/header'
 import Footer        from '../components/footer'

@@ -1,0 +1,66 @@
+@use '../utils/mixins';
+@import '../utils/variables';
+
+.arrows-container {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    top: 49%;
+
+    @include mixins.lg {
+        top: 48%;
+    }
+
+    .chevron {
+        color: $white;
+        font-size: 25px;
+        opacity: 1;
+        padding: 0 5px;
+
+        @include mixins.lg {
+            font-size: 50px;
+            padding: 0 25px;
+        }
+    }
+}
+
+.picture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+
+    
+    &.active {
+        opacity: 1;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+        @include mixins.lg {
+            border-radius: 25px;
+        }
+    }
+
+    .paging {
+        display: none;
+
+        @include mixins.lg {
+            display: block;
+            position: absolute;
+            left: 49%;
+            color: white;
+            bottom: 25px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

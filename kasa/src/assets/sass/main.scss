@@ -15,8 +15,12 @@
 @use './pages/home';
 @use './pages/about';
 @use './pages/error';
+@use './pages/accomodation';
 
 // COMPONENTS
 @use './components/banner';
 @use './components/card';
 @use './components/collapse';
+@use './components/gallery';
+@use './components/tag';
+@use './components/star';
