@@ -1,5 +1,4 @@
-import { useParams } from 'react-router-dom'
-import Accomodations from '../accomodation.json'
+import { useLoaderData } from 'react-router-dom'
 
 import Header        from '../components/header'
 import Footer        from '../components/footer'
@@ -9,8 +8,8 @@ import Star          from '../components/star'
 import Collapse      from '../components/collapse'
 
 export default function Accomodation () {
-    const { id }    = useParams();
-    const place     = Accomodations.find(place => place.id === id)
+
+    const place = useLoaderData()
 
     const rating    = place.rating
 
