@@ -25,7 +25,8 @@
     "test": "node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "node_modules/react-scripts/bin/react-scripts.js eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b gh-pages -r https://github.com/CaroleGrllt/ROLLAND_GRELLETY_Carole_11_kasa_102024.git",
+    "deploy": "gh-pages -d build -b gh-pages -r git@github.com:CaroleGrllt/ROLLAND_GRELLETY_Carole_11_kasa_102024.git"
+
   },
   "eslintConfig": {
     "extends": [
