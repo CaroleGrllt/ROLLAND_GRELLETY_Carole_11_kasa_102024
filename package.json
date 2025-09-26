@@ -3,14 +3,6 @@
   "homepage": "https://carolegrllt.github.io/ROLLAND_GRELLETY_Carole_11_kasa_102024",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node_modules/react-scripts/bin/react-scripts.js build",
-    "test": "node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node_modules/react-scripts/bin/react-scripts.js eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -26,6 +18,14 @@
     "react-scripts": "5.0.1",
     "sass": "^1.80.6",
     "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node_modules/react-scripts/bin/react-scripts.js eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b gh-pages -r https://github.com/CaroleGrllt/ROLLAND_GRELLETY_Carole_11_kasa_102024.git",
   },
   "eslintConfig": {
     "extends": [

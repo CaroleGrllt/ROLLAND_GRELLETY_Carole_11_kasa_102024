@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5fb0546.css",
-    "main.js": "/static/js/main.ef6e4410.js",
-    "static/media/about_banner.png": "/static/media/about_banner.267ac2c290cc7501e1c1.png",
-    "static/media/home_banner.png": "/static/media/home_banner.9a0b9b384459e705d7c3.png",
-    "static/media/logo.svg": "/static/media/logo.a5c76d8a1dac09edd59db36304e0bcfa.svg",
-    "index.html": "/index.html",
-    "main.d5fb0546.css.map": "/static/css/main.d5fb0546.css.map",
-    "main.ef6e4410.js.map": "/static/js/main.ef6e4410.js.map"
+    "main.css": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/css/main.d5fb0546.css",
+    "main.js": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/js/main.dd304f09.js",
+    "static/media/about_banner.png": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/media/about_banner.267ac2c290cc7501e1c1.png",
+    "static/media/home_banner.png": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/media/home_banner.9a0b9b384459e705d7c3.png",
+    "static/media/logo.svg": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/media/logo.a5c76d8a1dac09edd59db36304e0bcfa.svg",
+    "index.html": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/index.html",
+    "main.d5fb0546.css.map": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/css/main.d5fb0546.css.map",
+    "main.dd304f09.js.map": "/ROLLAND_GRELLETY_Carole_11_kasa_102024/static/js/main.dd304f09.js.map"
   },
   "entrypoints": [
     "static/css/main.d5fb0546.css",
-    "static/js/main.ef6e4410.js"
+    "static/js/main.dd304f09.js"
   ]
 }
