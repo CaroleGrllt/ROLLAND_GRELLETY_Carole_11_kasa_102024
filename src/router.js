@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         errorElement: <Error />,
     },
 
-]);
+],
+{
+    // IMPORTANT pour GitHub Pages (CRA renseigne PUBLIC_URL à partir de `homepage`)
+    basename: process.env.PUBLIC_URL,
+});
 
 export default router
